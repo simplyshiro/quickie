@@ -37,46 +37,46 @@ Scope {
                 anchors.fill: parent
                 color: Qt.alpha("black", 0.32)
 
-                Rectangle {
-                    anchors.centerIn: parent
-                    color: Color.scheme.surface
-                    height: row.height + (24 * 2)
-                    width: row.width + (24 * 2)
-                    radius: 16
-
-                    RowLayout {
-                        id: row
-                        anchors.centerIn: parent
-                        spacing: 8
-
-                        PowerButton {
-                            command: "systemctl poweroff"
-                            text: "mode_off_on"
-                        }
-
-                        PowerButton {
-                            _color: colors.tonal
-                            command: "systemctl reboot"
-                            text: "restart_alt"
-                        }
-
-                        PowerButton {
-                            _color: colors.tonal
-                            command: "systemctl reboot --boot-loader-entry=auto-windows"
-                            text: "browse"
-                        }
-
-                        PowerButton {
-                            _color: colors.tonal
-                            command: "loginctl terminate-user ''"
-                            text: "logout"
-                        }
-                    }
-                }
-
                 MouseArea {
                     anchors.fill: parent
                     onClicked: loader.active = false
+
+                    Rectangle {
+                        anchors.centerIn: parent
+                        color: Color.scheme.surface
+                        height: row.height + (24 * 2)
+                        width: row.width + (24 * 2)
+                        radius: 16
+
+                        RowLayout {
+                            id: row
+                            anchors.centerIn: parent
+                            spacing: 8
+
+                            PowerButton {
+                                command: "systemctl poweroff"
+                                text: "mode_off_on"
+                            }
+
+                            PowerButton {
+                                _color: colors.tonal
+                                command: "systemctl reboot"
+                                text: "restart_alt"
+                            }
+
+                            PowerButton {
+                                _color: colors.tonal
+                                command: "systemctl reboot --boot-loader-entry=auto-windows"
+                                text: "browse"
+                            }
+
+                            PowerButton {
+                                _color: colors.tonal
+                                command: "loginctl terminate-user ''"
+                                text: "logout"
+                            }
+                        }
+                    }
                 }
             }
         }

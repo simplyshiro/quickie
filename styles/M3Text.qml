@@ -120,7 +120,7 @@ Text {
 
     color: Color.scheme._onSurface
     font.family: "Google Sans Flex"
-    font.hintingPreference: Font.PreferFullHinting
+    font.hintingPreference: Font.PreferNoHinting
     font.letterSpacing: typescale.letterSpacing
     font.pixelSize: pixelSize
     font.preferTypoLineMetrics: true

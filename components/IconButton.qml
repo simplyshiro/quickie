@@ -143,8 +143,8 @@ Button {
         anchors.centerIn: root.background
         color: (root.checkable && root.checked) ? root._color.iconColorToggleSelected : (root.checkable && !root.checked) ? root._color.iconColorToggleUnselected : (root.enabled) ? root._color.iconColor : Qt.alpha(Color.scheme._onSurface, 0.38)
         filled: (root.checkable && root.checked) ? true : (root.enabled) ? root.hovered : false
-        font.pixelSize: root.size.iconSize
         icon: root.text
+        pixelSize: root.size.iconSize
     }
 
     Rectangle {

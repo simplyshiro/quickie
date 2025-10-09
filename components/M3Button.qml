@@ -153,8 +153,8 @@ Button {
         M3Icon {
             color: (root.checkable && root.checked) ? root._color.labelIconColorToggleSelected : (root.checkable && !root.checked) ? root._color.labelIconColorToggleUnselected : (root.enabled) ? root._color.labelIconColor : Qt.alpha(Color.scheme._onSurface, 0.38)
             filled: (root.checkable && root.checked) ? true : (root.enabled) ? root.hovered : false
-            font.pixelSize: root.size.iconSize
             icon: root._icon
+            pixelSize: root.size.iconSize
             visible: root._icon
         }
 

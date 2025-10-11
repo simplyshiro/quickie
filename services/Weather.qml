@@ -38,39 +38,39 @@ Singleton {
         "86": "Heavy snow showers",
         "95": "Thunderstorm",
         "96": "Thunderstorm with slight hail",
-        "99": "Thunderstorm with heavy hail",
+        "99": "Thunderstorm with heavy hail"
     }) */
 
     readonly property var weatherIcons: ({
-        "0": "clear_day",
-        "1": "clear_day",
-        "2": "partly_cloudy_day",
-        "3": "cloud",
-        "45": "foggy",
-        "48": "foggy",
-        "51": "rainy",
-        "53": "rainy",
-        "55": "rainy",
-        "56": "rainy",
-        "57": "rainy",
-        "61": "rainy",
-        "63": "rainy",
-        "65": "rainy",
-        "66": "rainy",
-        "67": "rainy",
-        "71": "weather_snowy",
-        "73": "weather_snowy",
-        "75": "weather_snowy",
-        "77": "weather_snowy",
-        "80": "rainy",
-        "81": "rainy",
-        "82": "rainy",
-        "85": "weather_snowy",
-        "86": "weather_snowy",
-        "95": "thunderstorm",
-        "96": "weather_hail",
-        "99": "weather_hail",
-    })
+            "0": "clear_day",
+            "1": "clear_day",
+            "2": "partly_cloudy_day",
+            "3": "cloud",
+            "45": "foggy",
+            "48": "foggy",
+            "51": "rainy",
+            "53": "rainy",
+            "55": "rainy",
+            "56": "rainy",
+            "57": "rainy",
+            "61": "rainy",
+            "63": "rainy",
+            "65": "rainy",
+            "66": "rainy",
+            "67": "rainy",
+            "71": "weather_snowy",
+            "73": "weather_snowy",
+            "75": "weather_snowy",
+            "77": "weather_snowy",
+            "80": "rainy",
+            "81": "rainy",
+            "82": "rainy",
+            "85": "weather_snowy",
+            "86": "weather_snowy",
+            "95": "thunderstorm",
+            "96": "weather_hail",
+            "99": "weather_hail"
+        })
 
     function getWeatherDescription(code) {
         return weatherDescriptions[code];
@@ -89,7 +89,7 @@ Singleton {
     function update() {
         const url = `https://api.open-meteo.com/v1/forecast?latitude=${Location.latitude}&longitude=${Location.longitude}&current=apparent_temperature,weather_code&timezone=auto`;
         Sun.update();
-    
+
         Request.get(url, text => {
             const json = JSON.parse(text).current;
             // description = getWeatherDescription(json.weather_code);

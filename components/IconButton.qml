@@ -15,7 +15,7 @@ Button {
             "containerColorToggleSelected": Color.scheme.primary,
             "iconColor": Color.scheme._onPrimary,
             "iconColorToggleUnselected": Color.scheme._onSurfaceVariant,
-            "iconColorToggleSelected": Color.scheme._onPrimary,
+            "iconColorToggleSelected": Color.scheme._onPrimary
         }
 
         readonly property var tonal: {
@@ -25,7 +25,7 @@ Button {
             "containerColorToggleSelected": Color.scheme.secondary,
             "iconColor": Color.scheme._onSecondaryContainer,
             "iconColorToggleUnselected": Color.scheme._onSecondaryContainer,
-            "iconColorToggleSelected": Color.scheme._onSecondary,
+            "iconColorToggleSelected": Color.scheme._onSecondary
         }
 
         readonly property var outlined: {
@@ -35,7 +35,7 @@ Button {
             "containerColorToggleSelected": Color.scheme.inverseSurface,
             "iconColor": Color.scheme._onSurfaceVariant,
             "iconColorToggleUnselected": Color.scheme._onSurfaceVariant,
-            "iconColorToggleSelected": Color.scheme.inverseOnSurface,
+            "iconColorToggleSelected": Color.scheme.inverseOnSurface
         }
 
         readonly property var standard: {
@@ -45,7 +45,7 @@ Button {
             "containerColorToggleSelected": "transparent",
             "iconColor": Color.scheme._onSurfaceVariant,
             "iconColorToggleUnselected": Color.scheme._onSurfaceVariant,
-            "iconColorToggleSelected": Color.scheme.primary,
+            "iconColorToggleSelected": Color.scheme.primary
         }
     }
 
@@ -58,7 +58,7 @@ Button {
             "wideLeadingTrailingSpace": 10,
             "outlineWidth": 1,
             "shapePressedMorph": 8,
-            "selectedContainerShapeRound": 12,
+            "selectedContainerShapeRound": 12
         }
 
         readonly property var small: {
@@ -69,7 +69,7 @@ Button {
             "wideLeadingTrailingSpace": 14,
             "outlineWidth": 1,
             "shapePressedMorph": 8,
-            "selectedContainerShapeRound": 12,
+            "selectedContainerShapeRound": 12
         }
 
         readonly property var medium: {
@@ -80,7 +80,7 @@ Button {
             "wideLeadingTrailingSpace": 24,
             "outlineWidth": 1,
             "shapePressedMorph": 12,
-            "selectedContainerShapeRound": 16,
+            "selectedContainerShapeRound": 16
         }
 
         readonly property var large: {
@@ -91,7 +91,7 @@ Button {
             "wideLeadingTrailingSpace": 48,
             "outlineWidth": 2,
             "shapePressedMorph": 16,
-            "selectedContainerShapeRound": 28,
+            "selectedContainerShapeRound": 28
         }
 
         readonly property var xlarge: {
@@ -102,7 +102,7 @@ Button {
             "wideLeadingTrailingSpace": 72,
             "outlineWidth": 3,
             "shapePressedMorph": 16,
-            "selectedContainerShapeRound": 28,
+            "selectedContainerShapeRound": 28
         }
     }
 

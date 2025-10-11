@@ -17,7 +17,7 @@ M3Text {
         "FILL": filled ? 1 : 0,
         "GRAD": grad,
         "opsz": pixelSize,
-        "wght": weight,
+        "wght": weight
     }
 
     text: icon

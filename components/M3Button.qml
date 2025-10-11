@@ -17,7 +17,7 @@ Button {
             "containerColorToggleSelected": Color.scheme.primary,
             "labelIconColor": Color.scheme.primary,
             "labelIconColorToggleUnselected": Color.scheme.primary,
-            "labelIconColorToggleSelected": Color.scheme._onPrimary,
+            "labelIconColorToggleSelected": Color.scheme._onPrimary
         }
 
         readonly property var filled: {
@@ -27,7 +27,7 @@ Button {
             "containerColorToggleSelected": Color.scheme.primary,
             "labelIconColor": Color.scheme._onPrimary,
             "labelIconColorToggleUnselected": Color.scheme._onSurfaceVariant,
-            "labelIconColorToggleSelected": Color.scheme._onPrimary,
+            "labelIconColorToggleSelected": Color.scheme._onPrimary
         }
 
         readonly property var tonal: {
@@ -37,7 +37,7 @@ Button {
             "containerColorToggleSelected": Color.scheme.secondary,
             "labelIconColor": Color.scheme._onSecondaryContainer,
             "labelIconColorToggleUnselected": Color.scheme._onSecondaryContainer,
-            "labelIconColorToggleSelected": Color.scheme._onSecondary,
+            "labelIconColorToggleSelected": Color.scheme._onSecondary
         }
 
         readonly property var outlined: {
@@ -47,7 +47,7 @@ Button {
             "containerColorToggleSelected": Color.scheme.inverseSurface,
             "labelIconColor": Color.scheme._onSurfaceVariant,
             "labelIconColorToggleUnselected": Color.scheme._onSurfaceVariant,
-            "labelIconColorToggleSelected": Color.scheme.inverseOnSurface,
+            "labelIconColorToggleSelected": Color.scheme.inverseOnSurface
         }
 
         readonly property var text: {
@@ -57,7 +57,7 @@ Button {
             "containerColorToggleSelected": "transparent",
             "labelIconColor": Color.scheme.primary,
             "labelIconColorToggleUnselected": Color.scheme.primary,
-            "labelIconColorToggleSelected": Color.scheme.primary,
+            "labelIconColorToggleSelected": Color.scheme.primary
         }
     }
 
@@ -69,7 +69,7 @@ Button {
             "leadingTrailingSpace": 12,
             "betweenIconLabelSpace": 8,
             "shapePressedMorph": 8,
-            "selectedContainerShapeRound": 12,
+            "selectedContainerShapeRound": 12
         }
 
         readonly property var small: {
@@ -79,7 +79,7 @@ Button {
             "leadingTrailingSpace": 16,
             "betweenIconLabelSpace": 8,
             "shapePressedMorph": 8,
-            "selectedContainerShapeRound": 12,
+            "selectedContainerShapeRound": 12
         }
 
         readonly property var medium: {
@@ -89,7 +89,7 @@ Button {
             "leadingTrailingSpace": 24,
             "betweenIconLabelSpace": 8,
             "shapePressedMorph": 12,
-            "selectedContainerShapeRound": 16,
+            "selectedContainerShapeRound": 16
         }
 
         readonly property var large: {
@@ -99,7 +99,7 @@ Button {
             "leadingTrailingSpace": 48,
             "betweenIconLabelSpace": 12,
             "shapePressedMorph": 16,
-            "selectedContainerShapeRound": 28,
+            "selectedContainerShapeRound": 28
         }
 
         readonly property var xlarge: {
@@ -109,7 +109,7 @@ Button {
             "leadingTrailingSpace": 64,
             "betweenIconLabelSpace": 16,
             "shapePressedMorph": 16,
-            "selectedContainerShapeRound": 28,
+            "selectedContainerShapeRound": 28
         }
     }
 

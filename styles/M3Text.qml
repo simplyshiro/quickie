@@ -9,105 +9,105 @@ Text {
             "letterSpacing": -0.25,
             "pixelSize": 56,
             "weight": 400,
-            "lineHeight": 64,
+            "lineHeight": 64
         }
 
         readonly property var displayMedium: {
             "letterSpacing": 0,
             "pixelSize": 45,
             "weight": 400,
-            "lineHeight": 52,
+            "lineHeight": 52
         }
 
         readonly property var displaySmall: {
             "letterSpacing": 0,
             "pixelSize": 36,
             "weight": 400,
-            "lineHeight": 44,
+            "lineHeight": 44
         }
 
         readonly property var headlineLarge: {
             "letterSpacing": 0,
             "pixelSize": 32,
             "weight": 400,
-            "lineHeight": 40,
+            "lineHeight": 40
         }
 
         readonly property var headlineMedium: {
             "letterSpacing": 0,
             "pixelSize": 28,
             "weight": 400,
-            "lineHeight": 36,
+            "lineHeight": 36
         }
 
         readonly property var headlineSmall: {
             "letterSpacing": 0,
             "pixelSize": 24,
             "weight": 400,
-            "lineHeight": 32,
+            "lineHeight": 32
         }
 
         readonly property var titleLarge: {
             "letterSpacing": 0,
             "pixelSize": 22,
             "weight": 400,
-            "lineHeight": 28,
+            "lineHeight": 28
         }
 
         readonly property var titleMedium: {
             "letterSpacing": 0.15,
             "pixelSize": 16,
             "weight": 500,
-            "lineHeight": 24,
+            "lineHeight": 24
         }
 
         readonly property var titleSmall: {
             "letterSpacing": 0.1,
             "pixelSize": 14,
             "weight": 500,
-            "lineHeight": 20,
+            "lineHeight": 20
         }
 
         readonly property var bodyLarge: {
             "letterSpacing": 0.5,
             "pixelSize": 16,
             "weight": 400,
-            "lineHeight": 24,
+            "lineHeight": 24
         }
 
         readonly property var bodyMedium: {
             "letterSpacing": 0.25,
             "pixelSize": 14,
             "weight": 400,
-            "lineHeight": 20,
+            "lineHeight": 20
         }
 
         readonly property var bodySmall: {
             "letterSpacing": 0.4,
             "pixelSize": 12,
             "weight": 400,
-            "lineHeight": 16,
+            "lineHeight": 16
         }
 
         readonly property var labelLarge: {
             "letterSpacing": 0.1,
             "pixelSize": 14,
             "weight": 500,
-            "lineHeight": 20,
+            "lineHeight": 20
         }
 
         readonly property var labelMedium: {
             "letterSpacing": 0.5,
             "pixelSize": 12,
             "weight": 500,
-            "lineHeight": 16,
+            "lineHeight": 16
         }
 
         readonly property var labelSmall: {
             "letterSpacing": 0.5,
             "pixelSize": 11,
             "weight": 500,
-            "lineHeight": 16,
+            "lineHeight": 16
         }
     }
 
@@ -128,7 +128,7 @@ Text {
     font.variableAxes: {
         "GRAD": grad,
         "opsz": pixelSize,
-        "wght": weight,
+        "wght": weight
     }
 
     font.weight: weight

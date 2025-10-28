@@ -119,7 +119,7 @@ Text {
     property int weight: emphasized ? (typescale.weight + 100) : typescale.weight
 
     color: Color.scheme._onSurface
-    font.family: "Inter"
+    font.family: "sans-serif"
     font.hintingPreference: Font.PreferNoHinting
     font.letterSpacing: typescale.letterSpacing
     font.pixelSize: pixelSize

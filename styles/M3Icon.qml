@@ -10,7 +10,7 @@ M3Text {
     property bool filled: false
 
     color: Color.scheme._onSurface
-    font.family: "Material Symbols Outlined"
+    font.family: "Material Symbols Rounded"
     pixelSize: 24
 
     font.variableAxes: {

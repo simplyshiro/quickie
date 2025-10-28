@@ -55,25 +55,25 @@ Scope {
 
                             PowerButton {
                                 command: "systemctl poweroff"
-                                text: "mode_off_on"
+                                icon: "mode_off_on"
                             }
 
                             PowerButton {
-                                _color: colors.tonal
+                                colorType: IconButton.ColorType.Tonal
                                 command: "systemctl reboot"
-                                text: "restart_alt"
+                                icon: "restart_alt"
                             }
 
                             PowerButton {
-                                _color: colors.tonal
+                                colorType: IconButton.ColorType.Tonal
                                 command: "systemctl reboot --boot-loader-entry=auto-windows"
-                                text: "browse"
+                                icon: "browse"
                             }
 
                             PowerButton {
-                                _color: colors.tonal
+                                colorType: IconButton.ColorType.Tonal
                                 command: "loginctl terminate-user ''"
-                                text: "logout"
+                                icon: "logout"
                             }
                         }
                     }
@@ -97,6 +97,6 @@ Scope {
         }
 
         onClicked: process.startDetached()
-        size: sizes.medium
+        sizeType: IconButton.SizeType.Medium
     }
 }

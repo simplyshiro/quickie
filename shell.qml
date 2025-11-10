@@ -7,4 +7,5 @@ import qs.widgets.bar
 Scope {
     Bar {}
     PowerPanel {}
+    Wallpaper {}
 }

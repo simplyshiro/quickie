@@ -18,19 +18,19 @@ Scope {
         PanelWindow {
             id: panel
 
+            WlrLayershell.exclusionMode: ExclusionMode.Ignore
+            WlrLayershell.keyboardFocus: WlrKeyboardFocus.Exclusive
+            WlrLayershell.layer: WlrLayer.Overlay
             anchors.bottom: true
             anchors.left: true
             anchors.right: true
             anchors.top: true
             color: "transparent"
             visible: loader.active
-            WlrLayershell.exclusionMode: ExclusionMode.Ignore
-            WlrLayershell.keyboardFocus: WlrKeyboardFocus.Exclusive
-            WlrLayershell.layer: WlrLayer.Overlay
 
             contentItem {
-                focus: true
                 Keys.onEscapePressed: loader.active = false
+                focus: true
             }
 
             Rectangle {

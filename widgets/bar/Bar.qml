@@ -10,7 +10,7 @@ Scope {
         model: Quickshell.screens
 
         PanelWindow {
-            property var modelData
+            required property ShellScreen modelData
 
             anchors.bottom: true
             anchors.left: true

@@ -4,7 +4,7 @@ import Quickshell
 import qs.widgets
 import qs.widgets.bar
 
-Scope {
+ShellRoot {
     Bar {}
     PowerPanel {}
     Wallpaper {}

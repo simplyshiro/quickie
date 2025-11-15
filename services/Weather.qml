@@ -77,9 +77,9 @@ Singleton {
     }
 
     function getWeatherIcon(code) {
-        if ((Sun.setted || !Sun.rised) && (code === 0 || code === 1)) {
+        if ((Sun.sunsetted || !Sun.sunrised) && (code === 0 || code === 1)) {
             return "bedtime";
-        } else if ((Sun.setted || !Sun.rised) && (code === 2)) {
+        } else if ((Sun.sunsetted || !Sun.sunrised) && (code === 2)) {
             return "partly_cloudy_night";
         } else {
             return weatherIcons[code];

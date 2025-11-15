@@ -22,7 +22,7 @@ Singleton {
     readonly property bool sunsetted: Clock.date >= sunset.date
 
     function update() {
-        const url = `https://api.sunrise-sunset.org/json?lat=${Location.latitude}&lng=${Location.longitude}&formatted=0`;
+        const url = `https://api.sunrise-sunset.org/json?lat=${Config.location.latitude}&lng=${Config.location.longitude}&formatted=0`;
 
         Request.get(url, text => {
             const json = JSON.parse(text).results;

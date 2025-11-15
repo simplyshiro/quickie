@@ -87,7 +87,7 @@ Singleton {
     }
 
     function update() {
-        const url = `https://api.open-meteo.com/v1/forecast?latitude=${Location.latitude}&longitude=${Location.longitude}&current=apparent_temperature,weather_code&timezone=auto`;
+        const url = `https://api.open-meteo.com/v1/forecast?latitude=${Config.location.latitude}&longitude=${Config.location.longitude}&current=apparent_temperature,weather_code&timezone=auto`;
         Sun.update();
 
         Request.get(url, text => {

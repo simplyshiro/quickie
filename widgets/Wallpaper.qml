@@ -21,6 +21,7 @@ Scope {
             screen: modelData
 
             Image {
+                anchors.fill: parent
                 asynchronous: true
                 cache: false
                 fillMode: Image.PreserveAspectCrop

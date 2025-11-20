@@ -2,6 +2,7 @@ pragma Singleton
 
 import QtQuick
 import Quickshell
+import Quickshell.Io
 
 Singleton {
     id: root
@@ -77,8 +78,18 @@ Singleton {
     function toggleScheme() {
         if (isDark) {
             scheme = light;
+            footSwitchToLightTheme.startDetached();
         } else {
             scheme = dark;
+            footSwitchToDarkTheme.startDetached();
         }
+    }
+
+    readonly property Process footSwitchToDarkTheme: Process {
+        command: ["fish", "-c", "pkill -SIGUSR1 foot"]
+    }
+
+    readonly property Process footSwitchToLightTheme: Process {
+        command: ["fish", "-c", "pkill -SIGUSR2 foot"]
     }
 }

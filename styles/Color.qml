@@ -78,11 +78,21 @@ Singleton {
     function toggleScheme() {
         if (isDark) {
             scheme = light;
+            gsettingsSwitchToLightTheme.startDetached();
             footSwitchToLightTheme.startDetached();
         } else {
             scheme = dark;
+            gsettingsSwitchToDarkTheme.startDetached();
             footSwitchToDarkTheme.startDetached();
         }
+    }
+
+    readonly property Process gsettingsSwitchToDarkTheme: Process {
+        command: ["fish", "-c", "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"]
+    }
+
+    readonly property Process gsettingsSwitchToLightTheme: Process {
+        command: ["fish", "-c", "gsettings set org.gnome.desktop.interface color-scheme 'prefer-light'"]
     }
 
     readonly property Process footSwitchToDarkTheme: Process {
